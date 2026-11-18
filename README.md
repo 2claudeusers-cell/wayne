@@ -4,9 +4,14 @@
 
 | 科目 | 章節 | 題數 | 頁面 |
 |---|---|---|---|
-| 歷史 | B2Ch5 | 145 | `b2ch5.html` |
-| 歷史 | B3Ch4-2 | 96 | `b3ch4-2.html` |
-| 地理 | B3Ch1 | 150 | `b3ch1.html` |
-| 地理 | B3Ch6 | 157 | `b3ch6.html` |
+| 歷史 | B2 Ch2 | 119 | `b2ch2.html` |
+| 歷史 | B2 Ch4 | 146 | `b2ch4.html` |
+| 歷史 | B2 Ch5 | 145 | `b2ch5.html` |
+| 歷史 | B3 Ch4-1 | 127 | `b3ch4-1.html` |
+| 歷史 | B3 Ch4-2 | 96 | `b3ch4-2.html` |
+| 地理 | B3 Ch1 | 150 | `b3ch1.html` |
+| 地理 | B3 Ch6 | 157 | `b3ch6.html` |
+| 地理 | B3 附錄A | 150 | `b3-appa.html` |
+| 地理 | B3 附錄B | 151 | `b3-appb.html` |
 
-純靜態網站，用 GitHub Pages 部署（main 分支根目錄）。
+共 9 章、1241 題。純靜態網站，用 GitHub Pages 部署（main 分支根目錄）。
