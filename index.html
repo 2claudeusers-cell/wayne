@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>高二社會刷題站｜歷史・地理百題互動練習</title>
+<meta name="description" content="115 高二歷史、地理百題線上互動練習，自動批改、錯題複習、進度自動儲存。">
+<style>
+:root{
+  --bg:#f5f2ea; --card:#fffdf8; --ink:#1f2a2b; --muted:#6b7473; --line:#e2dccf;
+  --accent:#1f6f6a; --accent-soft:#e1efed; --hist:#9a5b2e; --hist-soft:#f4e7db; --geo:#2f6a8f; --geo-soft:#dfeaf2;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#161b1b;--card:#1f2626;--ink:#e8ebe9;--muted:#9aa5a3;--line:#323b3a;
+    --accent:#5fb8b0;--accent-soft:#1f3634;--hist:#e0a774;--hist-soft:#3a2b20;--geo:#7fb4d9;--geo-soft:#1f2f3a;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 60px}
+header h1{font-size:30px;margin:0 0 6px;letter-spacing:.03em}
+header p{margin:0;color:var(--muted)}
+.total{display:flex;gap:24px;margin:22px 0 8px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.total b{display:block;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
+h2{font-size:17px;margin:34px 0 12px;display:flex;align-items:center;gap:8px}
+h2 .tag{font-size:12px;padding:2px 10px;border-radius:99px;font-weight:600}
+.hist .tag{background:var(--hist-soft);color:var(--hist)}
+.geo .tag{background:var(--geo-soft);color:var(--geo)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;
+  color:inherit;text-decoration:none;transition:transform .12s,border-color .12s}
+a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card .ch{font-size:13px;font-weight:700;letter-spacing:.05em}
+.hist .ch{color:var(--hist)} .geo .ch{color:var(--geo)}
+.card .t{font-size:18px;font-weight:600;margin:2px 0 8px}
+.card .m{font-size:13px;color:var(--muted)}
+.prog{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:12px}
+.prog i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px}
+.how{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;font-size:14px;color:var(--muted)}
+.how ul{margin:6px 0 0;padding-left:20px}
+footer{margin-top:30px;font-size:12px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>高二社會刷題站</h1>
+    <p>115 高二歷史・地理百題互動練習。選擇題自動批改，非選題可看參考答案再自評。</p>
+    <div class="total">
+      <span>章節<b>4</b></span>
+      <span>題目<b>548</b></span>
+      <span>你已練習<b id="tDone">0</b></span>
+    </div>
+  </header>
+
+  <section class="hist">
+    <h2><span class="tag">歷史</span></h2>
+    <div class="grid">
+      <a class="card" href="b2ch5.html" data-key="b2ch5-quiz-v1" data-n="145">
+        <div class="ch">B2 Ch5</div><div class="t">歷史百題 B2Ch5</div>
+        <div class="m">145 題・單選／題組／多選／混合題</div>
+        <div class="prog"><i></i></div><div class="m p"></div>
+      </a>
+      <a class="card" href="b3ch4-2.html" data-key="b3ch42-quiz-v1" data-n="96">
+        <div class="ch">B3 Ch4-2</div><div class="t">歷史百題 B3Ch4-2</div>
+        <div class="m">96 題・單選／多選／素養題／非選／題組</div>
+        <div class="prog"><i></i></div><div class="m p"></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="geo">
+    <h2><span class="tag">地理</span></h2>
+    <div class="grid">
+      <a class="card" href="b3ch1.html" data-key="b3ch1-quiz-v1" data-n="150">
+        <div class="ch">B3 Ch1</div><div class="t">地理百題 B3Ch1</div>
+        <div class="m">150 題・單選／題組／混合題／非選</div>
+        <div class="prog"><i></i></div><div class="m p"></div>
+      </a>
+      <a class="card" href="b3ch6.html" data-key="b3ch6-quiz-v1" data-n="157">
+        <div class="ch">B3 Ch6</div><div class="t">地理百題 B3Ch6</div>
+        <div class="m">157 題・單選／題組／混合題／非選</div>
+        <div class="prog"><i></i></div><div class="m p"></div>
+      </a>
+    </div>
+  </section>
+
+  <div class="how">
+    <b style="color:var(--ink)">使用方式</b>
+    <ul>
+      <li>進度會自動存在你這台裝置的瀏覽器裡，下次打開會接著做。</li>
+      <li>每章上方可以切換「未作答」「錯題」，專門複習做錯的題目。</li>
+      <li>點圖片可以放大；換裝置或清除瀏覽器資料後，進度會重來。</li>
+    </ul>
+  </div>
+  <footer>僅供學習練習使用</footer>
+</div>
+<script>
+let all=0;
+document.querySelectorAll("a.card").forEach(a=>{
+  let st={};
+  try{st=JSON.parse(localStorage.getItem(a.dataset.key)||"{}")||{}}catch(e){}
+  const n=+a.dataset.n;
+  const done=Object.values(st).filter(v=>v&&(v.done||v.self||v.pick!=null)).length;
+  all+=done;
+  a.querySelector(".prog i").style.width=Math.min(100,done/n*100)+"%";
+  a.querySelector(".p").textContent=done?`已練習 ${done} / ${n}`:"尚未開始";
+});
+document.getElementById("tDone").textContent=all;
+</script>
+</body>
+</html>
